@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="CSS das Páginas/CSSProduc.css">
+    <meta charset="utf-8">
+    <title>Página de Cadastro de produções</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1>Theatro</h1>
+        <div id="links" align="center">
+          <h4 class="links">
+            <span class="links">
+              <a href="MainPage.html" class="links"> Página inicial</a>
+              <a href=#cadastro_produções class="links">Cadastro das produções</a>
+              <a href="CadastroTeatros.html" class="links">Cadastro dos Teatros</a>
+              <a href="PagEventos.html" class="links">Página dos Eventos</a>
+              <a href="Relatórios.html" class="links">Relatórios</a>
+            </span>
+          </h4>
+        </div>
+        <form class="form">
+          <input type="search" name="q" placeholder=" ">
+          <input type="submit" value="Pesquisar">
+        </form>
+    </header>
+    <main class="main">
+      <div class="title">Cadastro de Produções</div>
+      <form method="POST">
+        <div class="sectionTitle">Dados da produçao</div>
+        <div class="formSection">
+          <div class="col">
+          <label>Nome da produção</label><br>
+          <input type="text" name="name" class="input-group" required>
+          </div>
+          <div class="col">
+            <label>Código da produção</label><br>
+            <input type="number" name="Código" class="input-group" required>
+          </div>
+          <div class="col">
+            <label>Nacionalidade</label><br>
+            <input type="text" name="Nacionalidade" class="input-group" placeholder="Brasileira" required>
+          </div>
+          <div class="col">    
+            <label>Data da produção</label><br>
+            <input id="date" type="date" class="input-group" name="date" required>
+          </div>
+          <div class="col">
+            <label>Autores</label><br>
+            <input type="text"  class="input-group" name="autors">
+          </div>
+          <div class="col">
+            <label>Atores</label><br>
+            <input type="text"  class="input-group" name="Elenco">
+          </div>
+          <div class="col">
+            <label>Tipo de Produção</label><br>
+            <select name="status" style="width: 96%; margin: 10px 0 10px 0;">
+              <option value="0" selected>Peça Teatral</option>
+              <option value="1">Musical</option>
+              <option value="2">Show de Dança</option>
+              <option value="3">Palestra</option>
+              <option value="4">Apresentação</option>
+            </select>
+          </div>
+          <label>Sobre a Produção:</label><br>
+          <textarea name="interest" placeholder="Descreva a Produção"></textarea><br>
+        </div>
+        <div class="button">
+          <input class="submit" type="submit" value="Cadastrar">
+        </div>
+      </form>
+      <div class="title">Produções Cadastradas:</div>
+      <form class="form">
+        <input type="search" name="" placeholder="Procurar Produção...">
+        <input type="submit" value="Listar Um">
+      </form>
+      <div class="formSection">
+        <div class="Descrição_Peça">
+          <img src="imagens/Cartaz1.jpg" height="25%" width="25%" class="cartaz">
+          <h2>O PEQUENO PRÍNCIPE</h2>
+          <p>Código da produção:003765</p>
+          <p>Data: 25/07/2023</p>
+          <p>Nacionalidade: França</p>
+          <p>Autor: Antoine de Saint Exupéry </p>
+          <p>Atores: Jean Pierre, Suzie Q., Caesar Zeppeli, Smokey Brown. </p>
+          <p>Tipo: Musical</p>
+          <input type="submit" value="Alterar Produção">
+          <input type="button" value="Excluir Produção">
+        </div>
+      </div>
+      <div class="formSection">
+        <div class="Descrição_Peça">
+          <img src="imagens/Cartaz2.jpg" height="25%" width="25%" class="cartaz">
+          <h2>KING NOTHING</h2>
+          <p>Código da produção:000567</p>
+          <p>Data: 26/07/2023</p>
+          <p>Nacionalidade: norte-americana</p>
+          <p>Autor: Lars Ulrich </p>
+          <p>Atores: James Hetfield, Lars Ulrich, Kirk Hammett, Jason Newsted. </p>
+          <p>Tipo: Peça Teatral</p>
+          <input type="submit" value="Alterar Produção">
+          <input type="button" value="Excluir Produção">
+        </div>
+      </div>
+      <div class="formSection">
+        <div class="Descrição_Peça">
+          <img src="imagens/Cartaz3.jpg" height="25%" width="25%" class="cartaz">
+          <h2>How to be a Human Being</h2>
+          <p>Código da produção:564723</p>
+          <p>Data: 27/07/2023</p>
+          <p>Nacionalidade: Britânico</p>
+          <p>Autor: Dave Bayley</p>
+          <p>Atores: Joe Seaward, Ed Irwin-Singer e Drew MacFarlane.</p>
+          <p>Tipo: Show de Dança</p>
+          <input type="submit" value="Alterar Produção">
+          <input type="button" value="Excluir Produção">
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>©Copyright IFSP2023 SLWEB.</p>
+    </footer>
+  </body>
+</html>

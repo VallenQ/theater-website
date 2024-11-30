@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="CSS das Páginas/CSSProduc.css">
+    <meta charset="utf-8">
+    <title>Página de Relatórios</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1>Theatro</h1>
+      <div id="links" align="center">
+        <h4 class="links">
+          <span class="links">
+            <a href="MainPage.html" class="links"> Página inicial</a>
+            <a href="CadastroProduc.html" class="links">Cadastro das produções</a>
+            <a href="CadastroTeatros.html" class="links">Cadastro dos Teatros</a>
+            <a href="PagEventos.html" class="links">Página dos Eventos</a>
+            <a href="#" class="links">Relatórios</a>
+          </span>
+        </h4>
+      </div>
+      <form class="form">
+        <input type="search" name="q" placeholder=" ">
+        <input type="submit" value="Pesquisar">
+      </form>
+    </header>
+      <main class="main">
+        <div class="title">Relatórios</div>
+        <form method="POST">
+          <div class="sectionTitle">Filtro:</div>
+          <div class="formSection">
+            <div class="col">
+                <label>Data Mínima</label><br>
+                <input type="date" name="name" class="input-group">
+            </div>
+            <div class="col">
+                <label>Data Máxima</label><br>
+                <input type="date" name="Código" class="input-group">
+            </div>
+            <div class="col">
+                <label>Número de Teatros em que a produção ocorre:</label><br>
+                <input type="number" name="Código" class="input-group">
+            </div>
+            <div class="col">
+              <label>Teatro:</label><br>
+              <input type="text" name="Código" class="input-group">
+            </div>
+            <div class="col">
+              <label>Filtrar por:</label><br>
+              <select name="status" style="width: 96%; margin: 10px 0 10px 0;">
+                <option value="0" selected>Produções</option>
+                <option value="1">Eventos</option>
+                <option value="2">Teatros</option>
+              </select>
+            </div>
+            <div class="button">
+              <input class="submit" type="submit" value="Buscar Relatório">
+            </div>
+          </div>
+        </form>
+        <div class="title">Resultados da Busca:</div>
+        <div class="formSection">
+          <div class="formSection">
+            <div class="Descrição_Peça">
+              <img src="imagens/Evento3.png" height="25%" width="25%" class="cartaz">
+              <h2>Orchestre à vapeur </h2>
+              <p>Código do Evento: 004</p>
+              <p>Código do Teatro: 0113</p>
+              <p>Data: 01/07/2023</p>
+              <p>Horário: Das 19:30 ás 22:00</p>
+            </div>
+          </div>
+          <div class="formSection">
+            <div class="Descrição_Peça">
+              <img src="imagens/Cartaz1.jpg" height="25%" width="25%" class="cartaz">
+              <h2>O PEQUENO PRÍNCIPE</h2>
+              <p>Código da produção:003765</p>
+              <p>Data: 25/07/2023</p>
+              <p>Nacionalidade: França</p>
+              <p>Autor: Antoine de Saint Exupéry </p>
+              <p>Atores: Jean Pierre, Suzie Q., Caesar Zeppeli, Smokey Brown. </p>
+              <p>Tipo: Musical</p>
+            </div>
+          </div>
+        </div>
+      </main>
+        <footer>
+          <p>©Copyright IFSP2023 SLWEB.</p>
+        </footer>
+  </body>
+</html>

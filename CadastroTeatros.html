@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="CSS das Páginas/CSSProduc.css">
+    <meta charset="utf-8">
+    <title>Página de Cadastro de Teatros</title>    
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1>Theatro</h1>
+      <div id="links" align="center">
+        <h4 class="links">
+          <span class="links">
+            <a href="MainPage.html" class="links"> Página inicial</a>
+            <a href="CadastroProduc.html" class="links">Cadastro das produções</a>
+            <a href="#" class="links">Cadastro dos Teatros</a>
+            <a href="PagEventos.html" class="links">Página dos Eventos</a>
+            <a href="Relatórios.html" class="links">Relatórios</a>
+          </span>
+        </h4>
+      </div>
+      <form class="form">
+        <input type="search" name="q" placeholder=" ">
+        <input type="submit" value="Pesquisar">
+      </form>
+    </header>
+    <main class="main">
+      <div class="title">Cadastro de Teatros</div>
+      <form method="POST">
+        <div class="sectionTitle">Dados do Teatro</div>
+        <div class="formSection">
+          <div class="col">
+            <label>Nome do Teatro</label><br>
+            <input type="text" name="name" class="input-group" required>
+          </div>
+          <div class="col">
+            <label>Código do Teatro</label><br>
+            <input type="number" name="Código" class="input-group" required>
+          </div>
+          <div class="col">
+            <label>Logradouro</label><br>
+            <input type="text" name="Logradouro" class="input-group" placeholder=" " required>
+          </div>
+          <div class="col">    
+              <label>Número</label><br>
+              <input id="date" type="number" class="input-group" name="number" required>
+          </div>
+          <div class="col">
+            <label>Cidade</label><br>
+            <input type="text"  class="input-group" name="Cidade">
+          </div>
+          <div class="col">
+            <label>Estado</label><br>
+            <input type="text"  class="input-group" name="Estado">
+          </div>       
+          <div class="col">
+            <div class="col">
+              <label>País</label><br>
+              <input type="text"  class="input-group" name="pais">
+            </div>
+          </div>
+          <label>Telefones de contato:</label><br>
+          <textarea name="interest" placeholder="Insira os telefones para contato(com o DDD):"></textarea><br>
+          </div>
+          <div class="button">
+            <input class="submit" type="submit" value="Cadastrar">
+          </div>
+      </form>
+      <div class="title">Teatros Cadastrados:</div>
+      <form class="form">
+        <input type="search" name="" placeholder="Procurar Teatro...">
+        <input type="submit" value="Listar Um">  
+      </form>
+      <div class="formSection">
+        <div class="Descrição_Peça">
+          <img src="imagens/Teatro1.jpg" height="25%" width="25%" class="cartaz">
+          <h2>Teatro Belas Artes</h2>
+          <p>Código do Teatro: 0901</p>
+          <p>Logradouro: Avenida das Artes</p>
+          <p>Número: 113</p>
+          <p>Cidade: São Paulo</p>
+          <p>Estado: São Paulo</p>
+          <p>País: Brasil</p>
+          <p>Telefones de contato: (555) 123-4567//(555) 987-6543</p>
+          <input type="submit" value="Alterar dados do Teatro">
+          <input type="button" value="Excluir Dados do Teatro">
+        </div>
+      </div>
+      <div class="formSection">
+        <div class="Descrição_Peça">
+          <img src="imagens/Teatro2.jpg" height="25%" width="25%" class="cartaz">
+          <h2>Teatro Aurora</h2>
+          <p>Código do Teatro: 3301</p>
+          <p>Logradouro:Rua das Flores</p>
+          <p>Número: 466</p>
+          <p>Cidade: cidade do Rio de Janeiro.</p>
+          <p>Estado: Rio de Janeiro</p>
+          <p>País: Brasil</p>
+          <p>Telefones de contato: (555) 987-6543</p>
+          <input type="submit" value="Alterar dados do Teatro">
+          <input type="button" value="Excluir Dados do Teatro">
+        </div>
+      </div>
+      <div class="formSection">
+        <div class="Descrição_Peça">
+          <img src="imagens/Teatro3.jpg" height="25%" width="25%" class="cartaz">
+          <h2>Théâtre Étoile</h2>
+          <p>Código do Teatro: 0113</p>
+          <p>Logradouro: Rue des merveilles</p>
+          <p>Número: 4256</p>
+          <p>Cidade: Lyon</p>
+          <p>Estado: Rhône-Alpes</p>
+          <p>País: France</p>
+          <p>Telefones de contato: (+33)65432-1098</p>
+          <input type="submit" value="Alterar dados do Teatro">
+          <input type="button" value="Excluir Dados do Teatro">
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>©Copyright IFSP2023 SLWEB.</p>
+    </footer>
+  </body>
+</html>

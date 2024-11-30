@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="CSS das Páginas/CSSProduc.css">
+    <meta charset="utf-8">
+    <title>Página dos Eventos</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1>Theatro</h1>
+      <div id="links" align="center">
+        <h4 class="links">
+          <span class="links">
+            <a href="MainPage.html" class="links"> Página inicial</a>
+            <a href="CadastroProduc.html" class="links">Cadastro das produções</a>
+            <a href="CadastroTeatros.html" class="links">Cadastro dos Teatros</a>
+            <a href="#" class="links">Página dos Eventos</a>
+            <a href="Relatórios.html" class="links">Relatórios</a>
+          </span>
+        </h4>
+      </div>
+      <form class="form">
+        <input type="search" name="q" placeholder=" ">
+        <input type="submit" value="Pesquisar">
+      </form>
+    </header>
+    <main class="main">
+      <div class="title">Cadastro de Eventos</div>
+      <form method="POST">
+        <div class="sectionTitle">Dados do Evento</div>
+        <div class="formSection">
+          <div class="col">
+            <label>Nome do Evento</label><br>
+            <input type="text" name="name" class="input-group" required>
+          </div>
+          <div class="col">
+            <label>Código do Evento</label><br>
+            <input type="number" name="Código" class="input-group" required>
+          </div>
+          <div class="col">
+            <label>Código do Teatro</label><br>
+            <input type="number" name="Código" class="input-group" required>
+          </div>
+          <div class="col">    
+            <label>Data do Evento</label><br>
+            <input id="date" type="date" class="input-group" name="number" required>
+          </div>
+          <div class="col">    
+            <label>Horário do Evento</label><br>
+            <input id="date" type="number" class="input-group" name="number" required>
+          </div>
+          <div class="col">
+          </div>
+          <label>Sobre o Evento:</label><br>
+          <textarea name="interest" placeholder="Descreva o Evento..."></textarea><br>
+        </div>
+        <div class="button">
+            <input class="submit" type="submit" value="Cadastrar">
+        </div>
+      </form>
+      <div class="title">Eventos Cadastrados:</div>
+      <form class="form">
+        <input type="search" name="" placeholder="Procurar Evento...">
+        <input type="submit" value="Listar Um">
+      </form>
+      <div class="formSection">
+        <div class="Descrição_Peça">
+          <img src="imagens/Evento1.png" height="25%" width="25%" class="cartaz">
+          <h2>Formatura BES2023</h2>
+          <p>Código do Evento: 002</p>
+          <p>Código do Teatro: 0901</p>
+          <p>Data: 29/09/2023</p>
+          <p>Horário: Das 20:00 ás 22:00</p>
+          <input type="submit" value="Alterar dados do Evento">
+          <input type="button" value="Excluir Dados do Evento">
+        </div>
+      </div>
+      <div class="formSection">
+        <div class="Descrição_Peça">
+          <img src="imagens/Evento2.webp" height="25%" width="25%" class="cartaz">
+          <h2>Show de Stand-up e Improviso</h2>
+          <p>Código do Evento: 013</p>
+          <p>Código do Teatro: 3301</p>
+          <p>Data: 12/07/2023</p>
+          <p>Horário: Das 14:30 ás 18:00</p>
+          <input type="submit" value="Alterar dados do Evento">
+          <input type="button" value="Excluir Dados do Evento">
+        </div>
+      </div>
+      <div class="formSection">
+        <div class="formSection">
+          <div class="Descrição_Peça">
+            <img src="imagens/Evento3.png" height="25%" width="25%" class="cartaz">
+            <h2>Orchestre à vapeur </h2>
+            <p>Código do Evento: 004</p>
+            <p>Código do Teatro: 0113</p>
+            <p>Data: 01/09/2023</p>
+            <p>Horário: Das 19:30 ás 22:00</p>
+            <input type="submit" value="Alterar dados do Evento">
+            <input type="button" value="Excluir Dados do Evento">
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>©Copyright IFSP2023 SLWEB.</p>
+    </footer>
+  </body>
+</html>
